@@ -1,0 +1,50 @@
+/* Seletor global: Seleciona todos os elementos da página ou de determinado lugar*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Seletor por tag: Seleciona os elementos pelo nome */
+p{
+    color: red;
+}
+
+main{
+    margin-top: 1rem;
+}
+
+/* Seletor por classe: Seleciona um elemento por sua classe  */
+.paragrafo{
+    border: 1px solid cyan;
+    color: blue;
+    margin-top: 1rem;
+}
+
+/* Seletor pelo id: Seleciona um elemento pelo seu id */
+#titulo{
+    color: greenyellow;
+    margin-bottom: 1rem;
+}
+
+/* Seletor por atributo: Seleciona um elemento pelo seu tipo*/
+input[type="password"]{
+    font-size: 3rem;
+}
+
+/* Seletor de descendentes: Seleciona elementos dentro de um outro elemento  */
+.login-form input{
+    font-size: 2rem;
+    color: red;
+}
+
+/* Seletor por filhos diretos: Seleciona elementos dentro de um outro elemento de forma mais especifica*/
+.login-form > input{
+    color: greenyellow;
+    width: 10rem;
+}
+
+/* Pseudo-classes: */
+.cadastro-form div:nth-of-type(2){
+    background: blue;
+}
